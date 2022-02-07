@@ -47,6 +47,8 @@ const siteContent = {
 
 console.log("project wired!");
 
+//Header Section
+
 const aTags = document.querySelectorAll("nav a");
 const services_a = document.querySelector("a:nth-of-type(1)");
 const product_a = document.querySelector("a:nth-of-type(2)");
@@ -75,6 +77,8 @@ ctaButton.textContent = siteContent.cta.button;
 
 const ctaImg = document.querySelector("#cta-img");
 ctaImg.src = siteContent.images["cta-img"];
+
+//Main Content
 
 const features_h4 = document.querySelector(".main-content .top-content .text-content:nth-of-type(1) h4");
 features_h4.textContent = siteContent["main-content"]["features-h4"];
@@ -108,3 +112,23 @@ vision_h4.textContent = siteContent["main-content"]["vision-h4"];
 
 const vision_p = document.querySelector(".main-content .bottom-content .text-content:nth-of-type(3) p");
 vision_p.textContent = siteContent["main-content"]["vision-content"];
+
+//Contact Section
+
+const contact_h4 = document.querySelector(".contact h4");
+contact_h4.textContent = siteContent.contact["contact-h4"];
+
+const address_p = document.querySelector(".contact p:nth-of-type(1)");
+address_p.textContent = siteContent.contact.address;
+
+const phoneNumber_p = document.querySelector(".contact p:nth-of-type(2)");
+phoneNumber_p.textContent = siteContent.contact.phone;
+
+const email_p = document.querySelector(".contact p:nth-of-type(3)");
+email_p.textContent = siteContent.contact.email;
+
+//Footer Section
+
+const footerText_a = document.querySelector("footer a");
+footerText_a.textContent = siteContent.footer.copyright;
+footerText_a.classList.add("bold");
