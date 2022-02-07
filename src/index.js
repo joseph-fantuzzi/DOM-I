@@ -61,21 +61,21 @@ const contact_a = document.querySelector("a:nth-of-type(6)");
 
 aTags.forEach((tag) => tag.classList.add("italic"));
 
-services_a.textContent = "Services";
-product_a.textContent = "Product";
-vision_a.textContent = "Vision";
-features_a.textContent = "Features";
-about_a.textContent = "About";
-contact_a.textContent = "Contact";
+services_a.textContent = siteContent.nav["nav-item-1"];
+product_a.textContent = siteContent.nav["nav-item-2"];
+vision_a.textContent = siteContent.nav["nav-item-3"];
+features_a.textContent = siteContent.nav["nav-item-4"];
+about_a.textContent = siteContent.nav["nav-item-5"];
+contact_a.textContent = siteContent.nav["nav-item-6"];
 
 const headerImg = document.querySelector("header img");
-headerImg.src = "http://localhost:9000/img/logo.png";
+headerImg.src = siteContent.images["logo-img"];
 
 const ctaText_h1 = document.querySelector(".cta-text h1");
-ctaText_h1.textContent = "DOM Is Awesome";
+ctaText_h1.textContent = siteContent.cta.h1;
 
 const ctaButton = document.querySelector(".cta-text button");
-ctaButton.textContent = "Get Started";
+ctaButton.textContent = siteContent.cta.button;
 
 const ctaImg = document.querySelector("#cta-img");
-ctaImg.src = "http://localhost:9000/img/cta.png";
+ctaImg.src = siteContent.images["cta-img"];
