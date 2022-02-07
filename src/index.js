@@ -47,8 +47,6 @@ const siteContent = {
 
 console.log("project wired!");
 
-//Caching the DOM
-
 const aTags = document.querySelectorAll("nav a");
 const services_a = document.querySelector("a:nth-of-type(1)");
 const product_a = document.querySelector("a:nth-of-type(2)");
@@ -56,8 +54,6 @@ const vision_a = document.querySelector("a:nth-of-type(3)");
 const features_a = document.querySelector("a:nth-of-type(4)");
 const about_a = document.querySelector("a:nth-of-type(5)");
 const contact_a = document.querySelector("a:nth-of-type(6)");
-
-//Manipulation
 
 aTags.forEach((tag) => tag.classList.add("italic"));
 
@@ -79,3 +75,36 @@ ctaButton.textContent = siteContent.cta.button;
 
 const ctaImg = document.querySelector("#cta-img");
 ctaImg.src = siteContent.images["cta-img"];
+
+const features_h4 = document.querySelector(".main-content .top-content .text-content:nth-of-type(1) h4");
+features_h4.textContent = siteContent["main-content"]["features-h4"];
+
+const features_p = document.querySelector(".main-content .top-content .text-content:nth-of-type(1) p");
+features_p.textContent = siteContent["main-content"]["features-content"];
+
+const about_h4 = document.querySelector(".main-content .top-content .text-content:nth-of-type(2) h4");
+about_h4.textContent = siteContent["main-content"]["about-h4"];
+
+const about_p = document.querySelector(".main-content .top-content .text-content:nth-of-type(2) p");
+about_p.textContent = siteContent["main-content"]["about-content"];
+
+const middleImg = document.querySelector("#middle-img");
+middleImg.src = siteContent.images["accent-img"];
+
+const services_h4 = document.querySelector(".main-content .bottom-content .text-content:nth-of-type(1) h4");
+services_h4.textContent = siteContent["main-content"]["services-h4"];
+
+const services_p = document.querySelector(".main-content .bottom-content .text-content:nth-of-type(1) p");
+services_p.textContent = siteContent["main-content"]["services-content"];
+
+const product_h4 = document.querySelector(".main-content .bottom-content .text-content:nth-of-type(2) h4");
+product_h4.textContent = siteContent["main-content"]["product-h4"];
+
+const product_p = document.querySelector(".main-content .bottom-content .text-content:nth-of-type(2) p");
+product_p.textContent = siteContent["main-content"]["product-content"];
+
+const vision_h4 = document.querySelector(".main-content .bottom-content .text-content:nth-of-type(3) h4");
+vision_h4.textContent = siteContent["main-content"]["vision-h4"];
+
+const vision_p = document.querySelector(".main-content .bottom-content .text-content:nth-of-type(3) p");
+vision_p.textContent = siteContent["main-content"]["vision-content"];
